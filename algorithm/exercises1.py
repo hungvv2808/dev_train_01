@@ -1,9 +1,12 @@
-def hun(exp, i):
+def sumTo100(arrNum, i):
     if i <= 9:
-        for e in (' + ', ' - ', ''):
-            hun(exp + e + str(i), i + 1)
-    elif eval(exp) == 100:
-        print('100 = ' + exp)
+        for act in (' + ', ' - ', ''):
+            newArr = arrNum + act + str(i)
+            # check side by side
+            # print(f'Round {i}: arr = ' + newArr + f', i = {i}')
+            sumTo100(newArr, i + 1)
+    elif eval(arrNum) == 100:
+        print('100 = ' + arrNum)
 
 
-hun('1', 2)
+sumTo100('1', 2)
