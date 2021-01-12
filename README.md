@@ -8,7 +8,7 @@ Python Train
            
     + Second step: After access the docker bash use this command to login:
     
-            $ mysql -uroot -p 
+            mysql> mysql -uroot -p 
     
     + Last step: Enter password for mysql (1111)
     + Note: 
@@ -16,7 +16,7 @@ Python Train
         - How to change password mysql
         + In mysql use this command to change root password:
         
-                $ ALTER USER 'root'@'localhost' IDENTIFIED BY '1111';
+                mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY '1111';
                 
         - Install Vim in docker bash
                 
@@ -31,9 +31,9 @@ Python Train
                 
         - Open mysql command to re-setup user/host/port
         
-                $ CREATE USER 'root'@'%' IDENTIFIED BY '1111';
+                mysql> CREATE USER 'root'@'%' IDENTIFIED BY '1111';
                 
-                $ GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
+                mysql> GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
                 
 
 - That is all setup for docker/mysql follow and enjoy !!!

@@ -1,4 +1,5 @@
 import requests
+import webbrowser
 from bs4 import BeautifulSoup as bs
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
@@ -27,6 +28,8 @@ def using_request():
         # print(r.text)
         bs_content = bs(r.content, 'html.parser')
         print('Current username: ' + bs_content.find('span', {'class', 'display-name'}).text)
+
+    webbrowser.open(REQUEST_URL)
 
 
 def using_selenium():
