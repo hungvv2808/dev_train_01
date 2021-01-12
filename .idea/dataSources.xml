@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="dev_train@127.0.0.1" uuid="9cb13344-e608-4d13-a4cb-ff068213a6bd">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://127.0.0.1:3306/dev_train</jdbc-url>
+    </data-source>
+  </component>
+</project>
