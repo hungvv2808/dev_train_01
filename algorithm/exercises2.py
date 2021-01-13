@@ -13,16 +13,16 @@ def getMinStep(x, y):
         if x * 2 <= y:
             x *= 2
             print(f'(*2) x = {x}, y = {y}')
-            logsCase += ' * 2 '
+            logsCase += ' * 2)'
         elif x * 2 > y:
             if y % 2 == 1:
                 x *= 2
                 print(f'(*2) x = {x}, y = {y}')
-                logsCase += ' * 2 '
+                logsCase += ' * 2)'
             else:
                 x -= 1
                 print(f'(-1) x = {x}, y = {y}')
-                logsCase += ' - 1 '
+                logsCase += ' - 1)'
         else:
             input('Cannot find the case to math !')
 
@@ -38,4 +38,4 @@ print(f'Default value: x = {x}, y = {y}')
 count_step, logsCase = getMinStep(x, y)
 print('-'*15 + ' Result ' + '-'*15)
 print(f'Min step: {count_step}')
-print('Case list logs: ' + logsCase)
+print('Case list logs: %s%d%s = %d' % ('('*count_step, x, logsCase, y))
