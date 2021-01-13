@@ -1,4 +1,9 @@
-Python Train
+# Docker tutorial #
+
+- Docker/MySQL-Server document:
+    + [How to run MySQL Docker container?](https://www.youtube.com/watch?v=NzKDlUVmIyE&t=210s)
+    + [How to Do a Clean Restart of a Docker Instance](https://docs.tibco.com/pub/mash-local/4.1.1/doc/html/docker/GUID-BD850566-5B79-4915-987E-430FC38DAAE4.html)
+    + [Change mysql password in Docker container](https://stackoverflow.com/questions/48249912/change-mysql-password-in-docker-container)
 
 - Docker setup:
 
@@ -35,5 +40,15 @@ Python Train
                 
                 mysql> GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
                 
+
+- Remove docker:
+        
+        $ sudo rm -Rf /Applications/Docker
+        $ sudo rm -f /usr/local/bin/docker
+        $ sudo rm -f /usr/local/bin/docker-machine
+        $ sudo rm -f /usr/local/bin/docker-compose
+        $ sudo rm -f /usr/local/bin/docker-credential-osxkeychain
+        $ sudo rm -Rf ~/.docker
+        $ sudo rm -Rf $HOME/Library/Containers/com.docker.docker
 
 - That is all setup for docker/mysql follow and enjoy !!!
