@@ -1,8 +1,8 @@
-x = int(input('Enter x: '))
-y = int(input('Enter y: '))
-while y < x:
-    y = int(input('Re-enter y (y > x): '))
-# x, y = 1, 10
+# x = int(input('Enter x: '))
+# y = int(input('Enter y: '))
+# while y < x:
+#     y = int(input('Re-enter y (y > x): '))
+x, y = 1, 10
 
 
 def getMinStep(x, y):

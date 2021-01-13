@@ -16,12 +16,13 @@ for c in customer:
     jsonStr = json.dumps(c.attributes)
     jsonArr.append(jsonStr)
 
-print(jsonArr)
+customerJson = '{"customers":[%s]}' % ', '.join(jsonArr)
+x = json.loads(customerJson)
 
-# for i in range(len(jsonArr)):
-#     data = jsonArr[i]
-#     with open('K2_Customer.csv', 'w') as outf:
-#         dw = csv.DictWriter(outf, data[0].keys())
-#         dw.writeheader()
-#         for row in data:
-#             dw.writerow(row)
+customerList = x['customers']
+with open('K2_Customer.csv', 'w') as f:
+    fieldnames = customerList[0].keys()
+    writer = csv.DictWriter(f, fieldnames=fieldnames)
+    writer.writeheader()
+    for cus in customerList:
+        writer.writerow(cus)
