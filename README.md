@@ -40,6 +40,8 @@
                 
                 mysql> GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
                 
+                mysql> FLUSH PRIVILEGES;
+                
 
 - Remove docker:
         
